@@ -18,14 +18,14 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-md bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">My web page with BOOSTRAP</a>
                 <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
@@ -68,13 +68,13 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/avataaars.svg" alt="" width="500" height="300">
+                    <img class=" d-flex align-items-center justify-content-center h-100 w-100" src="assets/img/portfolio/cabin.png"  alt="">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/avatar.png" alt="" width="500" height="300">
+                    <img class=" d-flex align-items-center justify-content-center h-100 w-100"  src="assets/img/portfolio/cake.png"  alt="">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/avataaars.svg" alt="" width="500" height="300">
+                    <img class="d-flex align-items-center justify-content-center h-100 w-100" src="assets/img/portfolio/circus.png"  alt="">
                   </div>
                 </div>
                 
@@ -522,8 +522,54 @@
                 </div>
               </div>
                 <div class="modal-footer d-flex justify-content-center">
-                  <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+                  <div class="signup-section">Not a member yet? <a href="#a" class="text-info"  data-dismiss="modal" data-toggle="modal" data-target="#signupmodal" > Sign Up</a>.</div>
                 </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- modal signup  -->
+        <div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-title text-center">
+                    <h4>Register</h4>
+                  </div>
+                  <div class="d-flex flex-column text-center">
+                    <form>
+                      <div class="form-group">
+                        <input type="name" class="form-control" id="name" placeholder="Your name...">
+                     </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                      </div>
+                      <button type="button" class="btn btn-info btn-block btn-round">Register</button>
+                    </form>
+                    
+                    <div class="text-center text-muted delimiter">or use a social network</div>
+                    <div class="d-flex justify-content-center social-buttons">
+                      <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                      </button>
+                      <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                      </button>
+                      <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                        <i class="fab fa-linkedin"></i>
+                      </button>
+                    </di>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         <!-- Bootstrap core JS-->
